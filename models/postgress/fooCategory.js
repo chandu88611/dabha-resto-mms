@@ -16,7 +16,7 @@ const getFoodCategoryModel = (sequelize,{ DataTypes }) => {
     },
   });
 
-  FoodCategory.hasMany(sequelize.models.MenuItem, { foreignKey: 'categoryId', as: 'menuItems' });
+
   return FoodCategory;
 };
 

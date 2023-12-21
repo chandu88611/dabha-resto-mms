@@ -4,6 +4,7 @@ import { Sequelize } from 'sequelize';
 import getUserModel from './models/postgress/user.js';
 import getMenuItemModel from './models/postgress/menuItem.js';
 import getFoodCategoryModel from './models/postgress/fooCategory.js';
+import getBillModel from './models/postgress/bill.js';
 
 
 const sequelize = new Sequelize('dhaba', 'postgres', 'Chandu@88611', {
@@ -14,7 +15,8 @@ const sequelize = new Sequelize('dhaba', 'postgres', 'Chandu@88611', {
 const models = {
   User: getUserModel(sequelize, Sequelize),
   menuItem:getMenuItemModel(sequelize, Sequelize),
-  foodCategory:getFoodCategoryModel(sequelize, Sequelize)
+  foodCategory:getFoodCategoryModel(sequelize, Sequelize),
+  Bill:getBillModel(sequelize, Sequelize)
 };
 
 const testConnection = async () => {

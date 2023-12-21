@@ -1,4 +1,3 @@
-import { DataTypes } from 'sequelize';
 
 const getMenuItemModel = (sequelize, { DataTypes }) => {
     const MenuItem = sequelize.define('MenuItem', {
@@ -27,7 +26,7 @@ const getMenuItemModel = (sequelize, { DataTypes }) => {
         },
       });
     
-      
+
     
       return MenuItem;
 };

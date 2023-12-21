@@ -12,6 +12,7 @@ import sequelize from "./connection.js";
 
 import userRoutes from './routes/postgres/userRoutes.js';
 import menuRoutes from './routes/postgres/menu.js';
+import billRoutes from './routes/postgres/bill.js';
 
 dotenv.config();
 const app = express();
@@ -33,7 +34,7 @@ app.use('/api/users', userRoutes);
 // app.use('/api', productRoutes);
 // app.use('/api/category', foodCategoryRoutes);
 app.use('/api', menuRoutes);
-// app.use('/api/bill', billRoutes);
+app.use('/api', billRoutes);
 
 const PORT = process.env.PORT || 9000;
 
