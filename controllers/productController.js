@@ -1,7 +1,7 @@
 // Import necessary modules
 import express from 'express';
 import { verifyToken } from '../middleware/authMiddleware.js';
-import { Category, PharmacyProduct } from '../models/product.js';
+import { Category, PharmacyProduct } from '../models/mongodb/product.js';
 
 
 

@@ -1,9 +1,9 @@
 import express from 'express';
 import { body, validationResult } from 'express-validator';
-import { Bill, BillProduct } from '../models/bill.js';
+import { Bill, BillProduct } from '../models/mongodb/bill.js';
 import { verifyToken } from '../middleware/authMiddleware.js';
-import { PharmacyProduct } from '../models/product.js';
-import MenuItem from '../models/menu.js';
+
+import MenuItem from '../models/mongodb/menu.js';
 
 const router = express.Router();
 

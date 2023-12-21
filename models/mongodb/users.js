@@ -21,12 +21,7 @@ const customUserSchema = new mongoose.Schema({
       message: 'Password must be at least 8 characters long',
     },
   },
-  first_name: {
-    type: String,
-    maxlength: 30,
-    default: '',
-  },
-  last_name: {
+  name: {
     type: String,
     maxlength: 30,
     default: '',
@@ -36,14 +31,7 @@ const customUserSchema = new mongoose.Schema({
     enum: ['user', 'admin'],
     default: ['user'],
   },
-  is_active: {
-    type: Boolean,
-    default: true,
-  },
-  is_staff: {
-    type: Boolean,
-    default: false,
-  },
+  
   registration_date: {
     type: Date,
     default: Date.now,

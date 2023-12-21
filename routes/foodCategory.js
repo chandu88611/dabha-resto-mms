@@ -1,5 +1,5 @@
 import express from 'express';
-import FoodCategory from '../models/foodCategory.js';
+import FoodCategory from '../models/mongodb/foodCategory.js';
 import { verifyToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();

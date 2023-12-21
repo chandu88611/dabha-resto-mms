@@ -1,5 +1,5 @@
 import express from 'express';
-import MenuItem from '../models/menu.js';
+import MenuItem from '../models/mongodb/menu.js';
 import { verifyToken } from '../middleware/authMiddleware.js';
 import { body, validationResult } from 'express-validator';
 

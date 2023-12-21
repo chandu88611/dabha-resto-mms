@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
-import CustomUser from '../models/users.js';
+import CustomUser from '../models/mongodb/users.js';
 
 dotenv.config();
 
